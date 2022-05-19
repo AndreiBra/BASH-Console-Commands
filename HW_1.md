@@ -294,5 +294,5 @@ bra75@DESKTOP-HH0SRPU MINGW64 /d/QA 30 Group/foldername_1
 $
 
 ```
-<img width="1080" alt="авторизация" src="https://github.com/AndreiBra/BASH_Console_Commands/blob/main/Image%203.png">
+<img width="1080" alt="авторизация" src="https://github.com/AndreiBra/BASH_Console_Commands/blob/main/HW_1.png">
 
