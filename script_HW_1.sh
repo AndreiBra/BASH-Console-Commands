@@ -24,4 +24,4 @@ ls
 
 #13) переместить любые 2 файла, которые вы создали, 
 #	 в любую другую папку.
-mv file_1.json file_1.txt ../folder_2
+mv file_1.json file_1.txt ../foldername_2
