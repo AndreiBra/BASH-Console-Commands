@@ -1,5 +1,5 @@
 # HW_1. The first part
-Linux terminal (GitBash) commands
+# Linux terminal (GitBash) commands
 
 ___
 
@@ -45,29 +45,35 @@ pwd
 2. Создать папку
 
 ```bash
-mkdir my_folder
+mkdir foldername
 ```
 3. Зайти в папку
 
 ```bash
-cd my_folder
+cd foldername
 ```
 4. Создать 3 папки
 
 ```bash
-mkdir folder_1 folder_2 folder_3
+mkdir foldername_1 foldername_2 foldername_3
 ```
 
 5. Зайти в любоую папку
 
 ```bash
-cd folder_1
+cd foldername_1
 ```
 
 6. Создать 5 файлов (3 txt, 2 json)
 
 ```bash
 touch file_1.txt file_2.txt file_3.txt file_1.json file_2.json
+```
+
+or create five files throught cat 
+
+```bash
+cat > file_1.txt file_2.txt file_3.txt file_1.json file_2.json
 ```
 
 7. Создать 3 папки
@@ -82,6 +88,12 @@ mkdir folder_1 folder_2 folder_3
 ls -la
 ```
 
+без скрытых папок
+
+```bash
+ls -l
+```
+
 9. Открыть любой txt файл
 
 ```bash
@@ -92,10 +104,10 @@ vim file_1.json
 
 ```
 {
-        "year":         2021,
-        "name":         "Anna",
+        "year":         2022,
+        "name":         "Andrei",
         "active":       True,
-        "skills":       ["Python", "c++", "JS"]
+        "skills":       ["Python", "Postman", "JS"]
 }
 ```
 
@@ -103,7 +115,7 @@ vim file_1.json
 
 ```bash
 Esc
-:qw
+:wq
 ```
 
 12. Выйти из папки на уровень выше
@@ -116,27 +128,31 @@ cd ../
 13. Переместить любые 2 файла, которые вы создали в любую другую папку.
 
 ```bash
-mv folder_1/file_1.json folder_1/file_1.txt folder_2
+mv foldername_1/file_1.json foldername_1/file_1.txt foldername_2
 ```
 
 14. Скопировать любые 2 файла, которые вы создали в любую другую папку.
 
 ```bash
-cp folder_1/file_2.json folder_1/file_2.txt folder_2
+cp foldername_1/file_2.json foldername_1/file_2.txt folder_2
 ```
 
 15. Найти файл по имени
 
 ```bash
-find folder_1/file_3.txt
+find foldername_1/file_3.txt
 ```
 
-16. Просмотреть содержимое в реальном времени
+16. Просмотреть содержимое в реальном времени (-f - обновлять информацию по мере появления новых строк в файле)
 
 ```bash
 tail -F file_1.json
 ```
+Поиск конкретного термина при мониторинге файла
 
+```bash
+tail -f file_1.json | grep search_term
+```
 17. Вывести несколько первых строк из текстового
 файла
 
@@ -146,8 +162,8 @@ head -n3 file_1.json
 
 ```
 {
-	"year":		2021
-	"name": 	"Anna",
+	"year":		2022
+	"name": 	"Andrei",
 ```
 
 18. Вывести несколько последних строк из текстового файла
@@ -157,7 +173,7 @@ tail -n3 file_1.json
 ```
 ```
 	"active": 	True,
-	"skills":	["Python", "c++", "JS"]
+	"skills":	["Python", "Postman", "JS"]
 }
 ```
 
@@ -178,10 +194,10 @@ date
 -----
 
 1. Отправить http запрос на сервер.
-http:// 162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000
+http://162.55.220.72:5005/terminal-hw-request
 
 ```bash
-$ curl "http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000"
+$ curl "http://162.55.220.72:5005/terminal-hw-request"
 
 ```
 2. Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
@@ -191,22 +207,22 @@ $ curl "http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000"
 #2) Написать скрипт который выполнит
 #автоматически пункты 3, 4, 5, 6, 7, 8, 13
 
-mkdir folder_1
+mkdir foldername_1
 
 #3) Зайти в папку
-cd folder_1
+cd foldername_1
 
 #4) Создать 3 папки
-mkdir folder_1 folder_2 folder_3
+mkdir foldername_1 foldername_2 foldername_3
 
 #5) Зайти в любоую папку
-cd folder_1
+cd foldername_1
 
 #6) Создать 5 файлов (3 txt, 2 json)
 touch file_1.txt file_2.txt file_3.txt file_1.json file_2.json
 
 #7) Создать 3 папки
-mkdir folder_1 folder_2 folder_3
+mkdir foldername_1 foldername_2 foldername_3
 
 #8). Вывести список содержимого папки
 ls
