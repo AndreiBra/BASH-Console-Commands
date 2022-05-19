@@ -295,3 +295,4 @@ mv: target '../folder_2' is not a directory
 bra75@DESKTOP-HH0SRPU MINGW64 /d/QA 30 Group/foldername_1
 $
 ```
+https://github.com/AndreiBra/BASH_Console_Commands/blob/main/Image%203.png
