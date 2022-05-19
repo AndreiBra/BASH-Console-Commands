@@ -227,7 +227,7 @@ $ curl "http://162.55.220.72:5005/terminal-hw-request"
 2. Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
 
 ```bash
-#!/usr/bin/bash
+
 #2) Написать скрипт который выполнит
 #автоматически пункты 3, 4, 5, 6, 7, 8, 13
 
@@ -256,12 +256,11 @@ ls
 mv file_1.json file_1.txt ../foldername_2
 ```
 
-После выполнения скрипта в папке "QA 30 Group" были созданы три папки в первой  foldername_1 вновь  созданы 3 папки и 5 файлов три с расширением txt и два с джейсонками.
+После выполнения скрипта в папке "QA 30 Group" были созданы три папки в первой  foldername_1 вновь  созданы 3 папки и 5 файлов три с расширением txt и два с джейсонками, далее два файла были перенесены в папку foldername_2.
 
 ```bash
 bra75@DESKTOP-HH0SRPU MINGW64 /d/QA 30 Group
-$ #!/usr/bin/bash
-#2) Написать скрипт который выполнит
+$ #2) Написать скрипт который выполнит
 #автоматически пункты 3, 4, 5, 6, 7, 8, 13
 
 mkdir foldername_1
@@ -284,15 +283,16 @@ mkdir foldername_1 foldername_2 foldername_3
 #8). Вывести список содержимого папки
 ls
 
-mv file_1.json file_1.txt ../folder_2ые вы создали,
+#13) переместить любые 2 файла, которые вы создали,
+mv file_1.json file_1.txt ../foldername_2
 bash: cd: folder_1: No such file or directory
 mkdir: cannot create directory ‘foldername_1’: File exists
 file_1.json  file_2.json  file_3.txt     foldername_2/
 file_1.txt   file_2.txt   foldername_1/  foldername_3/
-mv: target '../folder_2' is not a directory
 
 bra75@DESKTOP-HH0SRPU MINGW64 /d/QA 30 Group/foldername_1
 $
+
 ```
 <img width="1080" alt="авторизация" src="https://github.com/AndreiBra/BASH_Console_Commands/blob/main/Image%203.png">
 
