@@ -256,3 +256,42 @@ ls
 mv file_1.json file_1.txt ../folder_2
 
 ```
+
+После выполнения скрипта в папке "QA 30 Group" были созданы три папки в первой  foldername_1 вновь  созданы 3 папки и 5 файлов три с расширением txt и два с джейсонками.
+
+```bash
+bra75@DESKTOP-HH0SRPU MINGW64 /d/QA 30 Group
+$ #!/usr/bin/bash
+#2) Написать скрипт который выполнит
+#автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+mkdir foldername_1
+
+#3) Зайти в папку
+cd folder_1
+
+#4) Создать 3 папки
+mkdir foldername_1 foldername_2 foldername_3
+
+#5) Зайти в любоую папку
+cd foldername_1
+
+#6) Создать 5 файлов (3 txt, 2 json)
+touch file_1.txt file_2.txt file_3.txt file_1.json file_2.json
+
+#7) Создать 3 папки
+mkdir foldername_1 foldername_2 foldername_3
+
+#8). Вывести список содержимого папки
+ls
+
+mv file_1.json file_1.txt ../folder_2ые вы создали,
+bash: cd: folder_1: No such file or directory
+mkdir: cannot create directory ‘foldername_1’: File exists
+file_1.json  file_2.json  file_3.txt     foldername_2/
+file_1.txt   file_2.txt   foldername_1/  foldername_3/
+mv: target '../folder_2' is not a directory
+
+bra75@DESKTOP-HH0SRPU MINGW64 /d/QA 30 Group/foldername_1
+$
+```
