@@ -206,7 +206,7 @@ http://162.55.220.72:5005/terminal-hw-request
 $ curl "http://162.55.220.72:5005/terminal-hw-request"
 
 ```
-В консоле получен ответ на запрос
+В консоле получен ответ на запрос;
 
 ```bash
  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -221,6 +221,23 @@ $ curl "http://162.55.220.72:5005/terminal-hw-request"
     ]
   }
 }
+
+```
+В задании оказалось подзадание отправить свои данные на сервер методом Get:
+
+```bash
+bra75@DESKTOP-HH0SRPU MINGW64 ~
+$ curl 'http://162.55.220.72:5005/get_method?name=Andrei&age=47'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    24  100    24    0     0    241      0 --:--:-- --:--:-- --:--:--   244[
+  "Andrei",
+  "47"
+]
+
+
+bra75@DESKTOP-HH0SRPU MINGW64 ~
+$
 
 ```
 
