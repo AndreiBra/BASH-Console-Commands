@@ -55,9 +55,9 @@ cat > tf_3.txt
 vim tf_3.txt
 ```
 ```
-с
-любыми
-строками
+With
+any
+lines
 ```
 ```bash
 Esc
