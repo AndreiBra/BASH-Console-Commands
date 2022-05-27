@@ -29,17 +29,14 @@ touch tf_1.txt
 ```bash
 cat > tf_2.txt
 ```
-```bash
-vim tf_2.txt
-```
+
 ```
 - the first 1
 - the second 2
 - the third 3
 ```
 ```bash
-Esc
-:wq
+#записываем строку "ctrl+C" или "^D"
 ```
  
 ### 7. Зайти в папку inner_dir_1    
@@ -51,17 +48,14 @@ cd inner_dir_1
  ```bash
 cat > tf_3.txt
 ```
-```bash
-vim tf_3.txt
-```
+
 ```
 With
 any
 lines
 ```
 ```bash
-Esc
-:wq
+#записываем строку "ctrl+C" или "^D"
 ```
 ### 9. Через cat добавить в текстовый файл tf_3.txt строку “the second 2”
 
