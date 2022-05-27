@@ -215,22 +215,31 @@ cat >> tf_3.txt
   ```
 ### 35. Команда в одну строку. Создать папку и создать текстовый файл с содержиммым.: 
    ```bash
-   cat > tf_6.txt | mkdir dir_2
-     mkdir inner_dir_2 && cd inner_dir_2 && cat > tf_8.txt
+   cat > new.txt | mkdir new_folder
+     mkdir new_folder && cd new_folder && cat > tf_new.txt
+     # добавить информацию в новый файл
+     create
+     text
+     file
+     with
+     content
   ```
 ### 36. Команда в одну строку. Переместить в любую одну папку текстовые файлы у которых в содержимом есть слово “sec”: 
    ```bash
-   grep -lr sec | xargs mv -t dir_2
+   cd ..
+   grep -lr sec | xargs mv -t new_folder
   ```
 ### 37. Команда в одну строку. Скопировать в любую одну папку текстовые файлы у которых в содержимом есть слово “sec”: 
    ```bash
+   
    grep -lr sec | xargs cp -t inner_dir_1
    
-   ```								
+   ```
+   
 ### 38. Команда в одну строку. Найти все строки c “sec” во всех текстовых файлах, скопировать и вставить эти строки в один новый созданный текстовый файл.: 
    
    ```bash
-    grep -ir --line-buffered sec >> tf_7.txt 
+    grep -ir --line-buffered sec >> sec.txt 
    ```
 ### 39. Команда в одну строку. Удалить текстовые файлы у которых в содержимом есть слово “sec”: 
    ```bash
