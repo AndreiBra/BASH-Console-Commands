@@ -216,7 +216,7 @@ cat >> tf_3.txt
 ### 35. Команда в одну строку. Создать папку и создать текстовый файл с содержиммым.: 
    ```bash
    cat > new.txt | mkdir new_folder
-     mkdir new_folder && cd new_folder && cat > tf_new.txt
+     mkdir new_folder && cd new_folder 
      # добавить информацию в новый файл
      create
      text
